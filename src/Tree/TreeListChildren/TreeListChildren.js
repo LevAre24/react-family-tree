@@ -103,7 +103,7 @@ class TreeListChildren extends React.Component {
     if (this.props.members.length === 0) return null;
     let ret = [];
     ret.push(<ChildlistHeader key={'childlist_header_' + this.props.parent.id} {...this.props.linkprops} childcount={this.props.members.length}>Children with <a href={'#' + this.props.parent.id}>{this.props.parent.name}</a></ChildlistHeader>);
-    ret.push(<ChildList key={'childlist_' + this.props.parent.id} {...this.props.linkprops} innerRef={this.listRef}>
+    ret.push(<ChildList key={'childlist_' + this.props.parent.id} {...this.props.linkprops} ref={this.listRef}>
       {this.props.members.map(member => <li key={member.id}>
         <TreeMember
           onAddPartner={this.props.onAddPartner}

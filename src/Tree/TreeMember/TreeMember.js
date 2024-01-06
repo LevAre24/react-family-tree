@@ -8,7 +8,7 @@ import * as CommonStyles from './../TreeStylesShared';
 import * as TreeDimensionCalc from './TreeDimensionCalc';
 
 const TreeHeader = CommonStyles.TreeHeader;
-const VisuallyHiddenHeader = CommonStyles.VisuallyHidden.withComponent('h1');
+const VisuallyHiddenHeader = CommonStyles.VisuallyHidden.withComponent('h1');//styled(CommonStyles).attrs({as: 'h1'});
 
 const TreeTrunk = styled.article`
   display: inline-block;

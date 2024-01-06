@@ -43,6 +43,6 @@ export const TreeHeader = styled.h1`
   box-sizing: border-box;
 `;
 
-export const VisuallyHiddenSubheader = VisuallyHidden.withComponent('h2');
+export const VisuallyHiddenSubheader = VisuallyHidden.withComponent('h2');//styled(VisuallyHidden).attrs({as: 'h2'});
 
-//export const TreeSubheader = TreeHeader.withComponent('h1');
+//export const TreeSubheader = styled(TreeHeader).attrs({ as: 'h1'});

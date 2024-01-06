@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import TreeMember from './../TreeMember/TreeMember';
 import * as CommonStyles from './../TreeStylesShared';
 
-const VisuallyHiddenHeader = CommonStyles.VisuallyHidden.withComponent('h1');
+const VisuallyHiddenHeader = CommonStyles.VisuallyHidden.withComponent('h1');//styled(CommonStyles).attrs({as: 'h1'});
 
 const TreePartnerSection = styled.section`
   position: relative;
